@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" charset="UTF-8">
+    <title>羊驼养成</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/loading.css">
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+</head>
+
+<body class="fullScreen">
+<div class="fullScreen first_login">
+    <div class="choose">
+        <img class="sheep_head" src="img/sheep_header.png">
+        <div class="sheep_choose_box text-center">
+            <h1 class="font_color">请选择羊驼的颜色</h1>
+            <img src="img/分割线.png">
+            <ul class="list-unstyled">
+                <li>纯白色</li>
+                <li>浅驼色</li>
+                <li>深棕色</li>
+                <li>纯黑色</li>
+            </ul>
+            <img src="img/分割线.png">
+            <button class="btn" id="btn_home" onclick="goGift()">确定</button>
+        </div>
+    </div>
+</div>
+
+
+<div class="loading">
+    <img class="picSize center" src="img/loading.gif" alt=""/>
+</div>
+
+
+<script src="js/jquery-3.2.1.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/base.js"></script>
+
+<script type="text/javascript">
+    // 定时器
+    $(function () {
+        //定义3秒后隐藏loading
+        setInterval(function () {
+            $(".loading").fadeOut();
+        }, 100)
+    })
+</script>
+
+</body>
+</html>

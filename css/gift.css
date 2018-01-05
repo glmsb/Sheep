@@ -1,0 +1,31 @@
+
+.first_background {
+    background-image: url("../img/背景图.png");
+}
+
+.second_background {
+    background-image: url("../img/礼花.png");
+}
+
+.text1, .text2 {
+    font-size: 4em;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+
+.text1 {
+    margin-top: 28%;
+}
+
+.text3, .text4 {
+    position: relative;
+    font-size: 4.5em;
+    font-weight: bold;
+    color: rgb(176, 34, 33);
+    text-align: center;
+}
+
+.text3 {
+    margin-top: 48%;
+}

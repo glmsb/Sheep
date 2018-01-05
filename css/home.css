@@ -1,0 +1,49 @@
+.bg-goodFloor {
+    background: url("../img/bg_sheep.jpg") repeat;
+}
+.bg-sportsGround {
+    background: url("../img/背景图.png") repeat;
+}
+.bg-avenue {
+    background: url("../img/红包.png") repeat;
+}
+
+.list-inline {
+    position: absolute;
+    width: 100%;
+    bottom: 2%;
+    text-align: center;
+}
+
+.list-inline li {
+    width: 20%;
+    margin-right: 5%;
+}
+
+.list-inline > li:last-child {
+    margin-right: 0;
+}
+
+
+.function{
+    float: right;
+    display: flex;
+    height: 60%;
+    width: 180px;
+    align-items: center;
+    margin: 20% 0;
+}
+
+.function li{
+    margin-bottom: 50%;
+    text-align: center;
+}
+
+.menu{
+    height: 10%;
+    padding: 5%;
+}
+
+.sign_in{
+    float: right;
+}
