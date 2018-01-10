@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
     <title>新人礼包</title>
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="css/gift.css">
@@ -13,7 +14,7 @@
         <div class="text1">恭喜获得新人礼包</div>
         <div class="text2">拆开看一看吧</div>
         <div>
-            <img class="center" src="img/红包.png">
+            <img class="center pic_size" src="img/红包.png">
             <div class="text3">恭喜您获得</div>
             <div class="text4">10个金币</div>
         </div>
@@ -37,10 +38,13 @@
     };
 
     function jump() {
-        //定义3秒后隐藏loading
-        setInterval(function () {
+        $(".pic_size").click(function () {
             goHome();
-        }, 5000)
+        });
+        // //定义3秒后隐藏loading
+        // setInterval(function () {
+        //     goHome();
+        // }, 5000)
     }
 </script>
 </body>
