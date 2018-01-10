@@ -45,10 +45,10 @@ $(function () {
         signIn.click(function () {
             // alert("签到+1");
             $.ajax({
-                url: "http://www.wyd.com/admin/SignIn/sign",
-                // url: "http://www.wyd.com/admin/Login/login",
+                // url: "http://www.wyd.com/admin/Signin/signIn",
+                url: "http://www.wyd.com/admin/Login/login",
                 dataType:"text",
-                // data: {"name": "吕布", "password": "123456"},  //参数值
+                data: {"name": "吕布1", "password": "123456"},  //参数值
                 type: "POST",   //请求方式
                 beforeSend: function () {
                     //请求前的处理
