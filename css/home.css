@@ -1,11 +1,29 @@
 .bg-goodFloor {
-    background: url("../img/bg_sheep.jpg") repeat;
+    background: url("../img/场景1-至善楼.png") repeat;
+    transition: background 2s;
+    -webkit-transition: background 2s; /* Safari */
 }
+
 .bg-sportsGround {
-    background: url("../img/背景图.png") repeat;
+    background: url("../img/场景2-运动场.png") repeat;
+    transition: background 2s;
+    -webkit-transition: background 2s; /* Safari */
 }
+
 .bg-avenue {
-    background: url("../img/红包.png") repeat;
+    background: url("../img/场景3-林荫道.png") repeat;
+    transition: background 2s;
+    -webkit-transition: background 2s; /* Safari */
+}
+
+.header{
+    margin: 10% 0 0 -100px;
+}
+.sheep {
+    position: absolute;
+    bottom: 15%;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .list-inline {
@@ -17,6 +35,8 @@
 
 .list-inline li {
     width: 20%;
+    height: 110px;
+    line-height: 110px;
     margin-right: 5%;
 }
 
@@ -24,26 +44,29 @@
     margin-right: 0;
 }
 
+.function_left {
+    float: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 85%;
+    align-items: center;
+    list-style: none;
+}
 
-.function{
+.function_right {
     float: right;
     display: flex;
-    height: 60%;
-    width: 180px;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 85%;
     align-items: center;
-    margin: 20% 0;
+    list-style: none;
+    margin-right: 5%;
 }
 
-.function li{
-    margin-bottom: 50%;
-    text-align: center;
+/*并集选择器*/
+.function_left li, .function_right li {
+    margin-bottom: 50px;
 }
 
-.menu{
-    height: 10%;
-    padding: 5%;
-}
-
-.sign_in{
-    float: right;
-}
