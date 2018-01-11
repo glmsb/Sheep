@@ -32,7 +32,54 @@
     transform: translateX(-50%);
 }
 
-.heart1{
+#drop {
+    position: absolute;
+    bottom: 10%;
+    width: 60%;
+    height: 48%;
+    left: 50%;
+    transform: translateX(-50%);
+    /*transition: 3s;*/
+    /*animation: 3s drop infinite;*/
+}
+
+.water {
+    float: inside;
+    transition: 3s;
+    animation: 2s drop infinite;
+}
+
+@keyframes drop {
+    0% {
+        transform: scale(1.2) translateY(0);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(0.8) translateY(260px);
+        opacity: 0.2;
+    }
+}
+
+.shower_head {
+    position: absolute;
+    bottom: 52%;
+    width: 80px;
+    height: 68px;
+    left: 55%;
+    transform: translateX(-50%);
+    display: none;
+}
+
+.waters {
+    position: absolute;
+    bottom: 10%;
+    width: 86%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
+}
+
+.heart1 {
     position: absolute;
     bottom: 48%;
     width: 32px;
@@ -41,7 +88,7 @@
     display: none;
 }
 
-.heart2{
+.heart2 {
     position: absolute;
     bottom: 52%;
     width: 30px;
@@ -49,7 +96,8 @@
     left: 33%;
     display: none;
 }
-.heart3{
+
+.heart3 {
     position: absolute;
     bottom: 58%;
     width: 25px;
@@ -58,7 +106,8 @@
     transform: rotateZ(30deg);
     display: none;
 }
-.heart4{
+
+.heart4 {
     position: absolute;
     bottom: 63%;
     width: 20px;
@@ -67,7 +116,7 @@
     display: none;
 }
 
-.hand{
+.hand {
     position: absolute;
     bottom: 46%;
     width: 50px;
@@ -76,7 +125,8 @@
     transform: translateX(-50%);
     display: none;
 }
-.gold-des{
+
+.gold-des {
     position: absolute;
     bottom: 54%;
     width: 70px;

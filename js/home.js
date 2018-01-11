@@ -31,6 +31,20 @@ $(function () {
     var heart4 = $(".heart4");
     var gold_1 = $(".gold-des");
 
+    var water = $("#drop");
+    var showerHead = $(".shower_head");
+    var waters = $(".waters");
+
+
+    function initWater() {
+        for (var i = 0; i < 10; i++) {
+            var num1 = Math.random() * 100;
+            var num2 = Math.random() * 28;
+            var img = '<img class="water" style="position: absolute;left:' + num1 + '%;top: ' + num2 + '%;width: 15px;height: 25px" src="img/水滴.png">';
+            water.append(img);
+        }
+    }
+
 
     clickEvent();
 
@@ -105,10 +119,18 @@ $(function () {
 
         /**点击洗澡按钮时触发*/
         bath.click(function () {
-            // sheep.css("transform", "translateX(-30%)");
-
-            // sheep.css("transform", "rotate3d(30,10,30,deg)");
+            showerHead.fadeIn(500);
+            initWater();
+            water.fadeIn(1000);
+            waters.fadeIn(1500, function () {
+                setInterval(function () {
+                    showerHead.fadeOut("slow");
+                    water.fadeOut("slow");
+                    waters.fadeOut("slow");
+                }, 5000)
+            });
         });
+
         /**点击喂食按钮时触发*/
         feed.click(function () {
             // sheep.css("transform", "skew(15deg,20deg)");
