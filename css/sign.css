@@ -1,0 +1,46 @@
+.sign_bg {
+    background: url("../img/bg_sign.png") no-repeat;
+    background-size: cover;
+}
+
+.camera {
+    width: 80%;
+    height: 28%;
+}
+
+.pic {
+    width: 70%;
+    height: 42%;
+}
+
+.close {
+    width: 9%;
+    height: 5%;
+    padding: 8px;
+    margin-top: 30px;
+}
+
+.gold{
+    width: 24px;
+    height: 24px;
+    margin: 0 10px;
+}
+
+.sign_info{
+    color: white;
+    font-size: 1.8rem;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,20px);
+}
+
+.center_hr{
+    position: relative;
+    text-align: center;
+}
+
+.content{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}

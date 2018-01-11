@@ -1,5 +1,6 @@
 .login_bg {
     background-image: url("../img/背景图.png");
+    background-size: cover;
 }
 
 .choose {

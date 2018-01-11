@@ -1,15 +1,22 @@
 
 .first_background {
     background-image: url("../img/背景图.png");
+    background-size: cover;
 }
 
 .second_background {
     background-image: url("../img/礼花.png");
+    background-size: cover;
 }
 
 .pic_size {
     width: 62%;
     height: 50%;
+}
+
+.pic_size_open {
+    width: 65%;
+    height: 70%;
 }
 
 .text1, .text2 {

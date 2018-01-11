@@ -36,6 +36,24 @@ $(function () {
     }
 
     function clickEvent() {
+        /**点击至善楼按钮时触发*/
+        goodFloor.click(function () {
+            applyClasses(background, 'bg-goodFloor');
+            background.fadeIn();
+        });
+
+        /**点击运动场按钮时触发*/
+        sportsGround.click(function () {
+            applyClasses(background, 'bg-sportsGround');
+            background.fadeIn();
+        });
+
+        /**点击林荫道按钮时触发*/
+        avenue.click(function () {
+            applyClasses(background, 'bg-avenue');
+            background.fadeIn();
+        });
+
         /**点击返回按钮时触发*/
         back.click(function () {
             window.close();
@@ -43,7 +61,13 @@ $(function () {
 
         /**点击签到按钮时触发*/
         signIn.click(function () {
-            // alert("签到+1");
+            open("sign.html");
+            // window.location.href = "sign.html";
+        });
+
+        /**点击抚摸按钮时触发*/
+        stroke.click(function () {
+            // sheep.css("transform", "scaleY(2)");
             $.ajax({
                 // url: "http://www.wyd.com/admin/Signin/signIn",
                 url: "http://www.wyd.com/admin/Login/login",
@@ -67,29 +91,7 @@ $(function () {
                     console.log("error");
                 }
             });
-        });
 
-        /**点击至善楼按钮时触发*/
-        goodFloor.click(function () {
-            applyClasses(background, 'bg-goodFloor');
-            background.fadeIn();
-        });
-
-        /**点击运动场按钮时触发*/
-        sportsGround.click(function () {
-            applyClasses(background, 'bg-sportsGround');
-            background.fadeIn();
-        });
-
-        /**点击林荫道按钮时触发*/
-        avenue.click(function () {
-            applyClasses(background, 'bg-avenue');
-            background.fadeIn();
-        });
-
-        /**点击抚摸按钮时触发*/
-        stroke.click(function () {
-            // sheep.css("transform", "scaleY(2)");
         });
         /**点击洗澡按钮时触发*/
         bath.click(function () {
