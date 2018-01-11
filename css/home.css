@@ -32,6 +32,59 @@
     transform: translateX(-50%);
 }
 
+.heart1{
+    position: absolute;
+    bottom: 48%;
+    width: 32px;
+    height: 20px;
+    left: 41%;
+    display: none;
+}
+
+.heart2{
+    position: absolute;
+    bottom: 52%;
+    width: 30px;
+    height: 18px;
+    left: 33%;
+    display: none;
+}
+.heart3{
+    position: absolute;
+    bottom: 58%;
+    width: 25px;
+    height: 15px;
+    left: 40%;
+    transform: rotateZ(30deg);
+    display: none;
+}
+.heart4{
+    position: absolute;
+    bottom: 63%;
+    width: 20px;
+    height: 12px;
+    left: 30%;
+    display: none;
+}
+
+.hand{
+    position: absolute;
+    bottom: 46%;
+    width: 50px;
+    height: 38px;
+    left: 65%;
+    transform: translateX(-50%);
+    display: none;
+}
+.gold-des{
+    position: absolute;
+    bottom: 54%;
+    width: 70px;
+    height: 23px;
+    left: 50%;
+    display: none;
+}
+
 .list-inline {
     position: absolute;
     width: 100%;

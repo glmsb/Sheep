@@ -24,6 +24,14 @@ $(function () {
     //羊驼
     var sheep = $(".sheep");
 
+    var hand = $(".hand");
+    var heart1 = $(".heart1");
+    var heart2 = $(".heart2");
+    var heart3 = $(".heart3");
+    var heart4 = $(".heart4");
+    var gold_1 = $(".gold-des");
+
+
     clickEvent();
 
     //切换背景图片
@@ -61,17 +69,60 @@ $(function () {
 
         /**点击签到按钮时触发*/
         signIn.click(function () {
-            open("sign.html");
+            open("sign.html", "_self");
             // window.location.href = "sign.html";
         });
 
         /**点击抚摸按钮时触发*/
         stroke.click(function () {
             // sheep.css("transform", "scaleY(2)");
+            hand.show("slow", function () {
+                hand.animate({bottom: '-=3%', opacity: '0.4'}, "slow");
+                hand.animate({opacity: '0.8'}, "slow");
+                hand.animate({bottom: '+=3%'}, "slow");
+                hand.fadeOut(2000);
+            });
+            gold_1.show("fast", function () {
+                // gold_1.animate({top: '-=10%'}, "slow");
+                // gold_1.animate({top: '-=10%'}, "fast");
+                gold_1.animate({top: '15%'}, 3000, "swing", function () {
+                    gold_1.fadeOut("slow");
+                });
+            });
+            heart1.fadeIn(500);
+            heart2.fadeIn(1000);
+            heart3.fadeIn(1500);
+            heart4.fadeIn(2000);
+            heart1.fadeOut("slow");
+            heart2.fadeOut("slow");
+            heart3.fadeOut("slow");
+            heart4.fadeOut("slow");
+            // heart.show("slow"), function () {
+            //
+            // }
+        });
+
+
+        /**点击洗澡按钮时触发*/
+        bath.click(function () {
+            // sheep.css("transform", "translateX(-30%)");
+
+            // sheep.css("transform", "rotate3d(30,10,30,deg)");
+        });
+        /**点击喂食按钮时触发*/
+        feed.click(function () {
+            // sheep.css("transform", "skew(15deg,20deg)");
+        });
+        /**点击喝水按钮时触发*/
+        drinking.click(function () {
+            // sheep.css("transform", "skew(-15deg,-20deg)");
+            // sheep.css("transform", "translateX(-30%)");
+
+            // sheep.css("transform", "rotate(15deg,25deg)");
             $.ajax({
                 // url: "http://www.wyd.com/admin/Signin/signIn",
                 url: "http://www.wyd.com/admin/Login/login",
-                dataType:"text",
+                dataType: "text",
                 data: {"name": "吕布1", "password": "123456"},  //参数值
                 type: "POST",   //请求方式
                 beforeSend: function () {
@@ -92,23 +143,6 @@ $(function () {
                 }
             });
 
-        });
-        /**点击洗澡按钮时触发*/
-        bath.click(function () {
-            // sheep.css("transform", "translateX(-30%)");
-
-            // sheep.css("transform", "rotate3d(30,10,30,deg)");
-        });
-        /**点击喂食按钮时触发*/
-        feed.click(function () {
-            // sheep.css("transform", "skew(15deg,20deg)");
-        });
-        /**点击喝水按钮时触发*/
-        drinking.click(function () {
-            // sheep.css("transform", "skew(-15deg,-20deg)");
-            // sheep.css("transform", "translateX(-30%)");
-
-            // sheep.css("transform", "rotate(15deg,25deg)");
         });
     }
 });
