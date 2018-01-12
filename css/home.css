@@ -32,6 +32,25 @@
     transform: translateX(-50%);
 }
 
+.two_grass {
+    position: absolute;
+    bottom: 38%;
+    left: 51%;
+    width: 30%;
+    transform: translateX(-50%);
+    z-index: 10;
+    display: none;
+}
+
+.cup {
+    position: absolute;
+    bottom: 28%;
+    left: 55%;
+    width: 11%;
+    transform: translateX(-50%);
+    display: none;
+}
+
 #drop {
     position: absolute;
     bottom: 10%;
@@ -76,6 +95,30 @@
     width: 86%;
     left: 50%;
     transform: translateX(-50%);
+    display: none;
+}
+
+.sun1 {
+    position: absolute;
+    bottom: 47%;
+    width: 16%;
+    left: 29%;
+    display: none;
+}
+
+.sun2 {
+    position: absolute;
+    bottom: 50%;
+    width: 10%;
+    left: 64%;
+    display: none;
+}
+
+.sun3 {
+    position: absolute;
+    bottom: 60%;
+    width: 16%;
+    left: 50%;
     display: none;
 }
 
@@ -143,7 +186,7 @@
 }
 
 .list-inline li {
-    width: 20%;
+    width: 22%;
     margin-right: 5%;
 }
 
@@ -194,3 +237,52 @@
     margin-bottom: 10px;
 }
 
+.dialog {
+    position: absolute;
+    background: url("../img/弹出框.png") no-repeat;
+    background-size: 100% 100%;
+    transition: background 2s;
+    width: 65%;
+    padding: 10px 5px 0 30px;
+    z-index: 10113;
+    display: none;
+}
+
+h4 {
+    text-align: center;
+    color: #4b90c0;
+    font: 1.5rem Microsoft YaHei, "微软雅黑";
+}
+
+
+p {
+    margin-bottom: 0;
+    color: #757575;
+    font: 1rem Microsoft YaHei, "微软雅黑";
+    text-indent: 2em;
+}
+
+button {
+    position: relative;
+    background-color: rgb(76, 144, 193);
+    text-align: right;
+    margin: 30px auto 30px auto;
+    color: white;
+    left: 50%;
+    padding: 3px 12px;
+    transform: translateX(-50%);
+    font-size: 1.5rem;
+}
+
+.input_info{
+    display: inline-block;
+    height: 30px;
+    background-color: rgb(253,244,251);
+    border-radius: 5px;
+    margin-top: 12px;
+}
+
+input{
+    border: none;
+    width: 68%;
+}
