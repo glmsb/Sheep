@@ -3,8 +3,8 @@ $(function () {
     var sign = $(".camera");
 
     close1.click(function () {
-        close();
-        // open(location, '_self').close();
+        // close();
+        history.back();
     });
 
     sign.click(function () {

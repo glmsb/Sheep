@@ -107,8 +107,9 @@ $(function () {
 
         /**点击签到按钮时触发*/
         signIn.click(function () {
-            open("sign.html", "_self");
+            // open("sign.html", "_self");
             // window.location.href = "sign.html";
+            window.location = "sign.html";
         });
 
         /**点击抚摸按钮时触发*/
@@ -211,22 +212,29 @@ $(function () {
              });*/
         });
 
-
+        /**点击关于按钮时触发*/
         about.click(function () {
             overlay.show();
             dialogAbout.fadeToggle();
             overlay.click(function () {
                 dialogAbout.fadeOut();
                 overlay.close();
-            })
-        });
-        btnKnow.click(function () {
-            dialogAbout.fadeOut();
-            overlay.close();
+            });
+
+            btnKnow.click(function () {
+                dialogAbout.fadeOut();
+                overlay.close();
+            });
         });
 
+        /**点击个人信息按钮时触发*/
         personInfo.click(function () {
+            overlay.show();
             dialogPerson.fadeToggle();
+            overlay.click(function () {
+                dialogPerson.fadeOut();
+                overlay.close();
+            });
         })
     }
 });

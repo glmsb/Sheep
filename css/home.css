@@ -254,8 +254,7 @@ h4 {
     font: 1.5rem Microsoft YaHei, "微软雅黑";
 }
 
-
-p {
+.indent_p {
     margin-bottom: 0;
     color: #757575;
     font: 1rem Microsoft YaHei, "微软雅黑";
@@ -274,15 +273,45 @@ button {
     font-size: 1.5rem;
 }
 
-.input_info{
-    display: inline-block;
+.dialog_person{
+    top: 48%;
+}
+
+#info_form {
+    margin: 8px 10px 15px 0;
+}
+
+.input_info {
     height: 30px;
-    background-color: rgb(253,244,251);
+    background-color: rgb(253, 244, 251);
     border-radius: 5px;
     margin-top: 12px;
 }
 
-input{
-    border: none;
-    width: 68%;
+span {
+    color: #4b90c0;
+    margin-left: 3px;
 }
+
+input {
+    border: none;
+    background: none;
+    height: 100%;
+    width: 65%;
+    display: inline;
+}
+
+.hint_info {
+    color: #979797;
+    font: 1rem Microsoft YaHei, "微软雅黑";
+}
+
+#sure {
+    left: 33%;
+    font-weight: bold;
+}
+
+#cancel{
+    left: 38%;
+}
+
