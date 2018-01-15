@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <title>主页</title>
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="css/common.css">
     <link rel="stylesheet" type="text/css" href="css/home.css">
 </head>
@@ -33,16 +32,13 @@
     <img class="sun2" src="img/小太阳.png">
     <img class="sun3" src="img/小太阳.png">
 
-    <ul class="list-inline">
-        <li class="btn btn-danger textStyle" id="goodFloor">至善楼</li>
-        <li class="btn btn-info textStyle" id="sportsGround">运动场</li>
-        <li class="btn btn-warning textStyle" id="avenue">林荫道</li>
+    <ul class="screen">
+        <li class="textStyle" id="goodFloor">至善楼</li>
+        <li class="textStyle" id="sportsGround">运动场</li>
+        <li class="textStyle" id="avenue">林荫道</li>
     </ul>
 
     <ul class="function_left">
-        <li id="share">
-            <img src="img/icon分享.png">
-        </li>
         <li id="detail">
             <img src="img/icon金币情况.png">
         </li>
@@ -58,9 +54,6 @@
     </ul>
 
     <ul class="function_right">
-        <li id="back">
-            <img src="img/返回按钮.png">
-        </li>
         <li id="sign_in">
             <img src="img/签到按钮.png">
         </li>
@@ -80,11 +73,29 @@
 
     <div class="dialog_about dialog center">
         <h4>关于我们</h4>
-        <p class="indent_p"> 云南工商学院是经教育部批准成立的全日制本科院校，坐落于四季如春/风景秀丽的春城昆明，是一所师资力量雄厚，学科特色鲜明，教育质量和科研水平较高的应用型大学。</p>
+        <p class="indent_p">
+            云南工商学院是经教育部批准成立的全日制本科高校，为打造一个人与自然和谐的校园，使师生能够在紧张繁忙的工作、学习中缓解压力，学校于2017年6月圈养了3只萌宠羊驼，并打造一个5000多平方米的自然公园，供羊驼生活、休息。</p>
         <img style="width: 100%" src="img/关于_分割线.png">
-        <h4>关于这款小程序 </h4>
-        <p class="indent_p"> 羊驼养成小程序由云南工商学院开发，用户通过喂食、抚摸等动作实现宠物的成长。</p>
-        <p class="indent_p"> 羊驼饲养到不同阶段可领取相应的礼品······</p>
+        <h4>关于这款小游戏</h4>
+        <p class="indent_p">羊驼养成小程序由云南工商学院开发，针对高三毕业学生通过喂食、抚摸等动作实现宠物的成长。
+            羊驼养成后可参加云南工商学院组织的夏令营。<br/>
+            第一阶段（3月25日—4月5日）10天连续喂食、抚摸等与羊驼互动，可获得寄送羊驼公仔纪念品；<br/>
+            第二阶段（6月10日—20日），可获得来校参加夏令营机会；<br/>
+            第三阶段（6月20日—25日）可参加学校组织的夏令营，并参加其他校内职业素质拓展活动。
+        </p>
+        <h4>游戏规则</h4>
+        <p class="indent_p">
+            1.新人首次登陆，获得6-20个随机金币;<br/>
+            2.每日首次分享成功获得3个金币;<br/>
+            3.每日签到得金币：第一天4个，连续签到第二天6个，连续签到第三天开始每天8个，中断则从第一天开始算起;<br/>
+            4.抚摸减1个金币;<br/>
+            5.喝水减2个金币;<br/>
+            6.喂食减3个金币;<br/>
+            7.洗澡减4个金币;<br/>
+            8.完成1套抚摸、洗澡、喂食、喝水记为1天;<br/>
+            9.根据所处的不同阶段，显示不同大小的宠物（从一阶段到三阶段由小到大）;<br/>
+            10.每到达一个阶段，可以填写个人信息用于领取相应的奖励。
+        </p>
         <button id="btn_know">知道了</button>
     </div>
 
@@ -193,7 +204,7 @@
 
 </div>
 
-<script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
 <script type="text/javascript" src="js/home.js"></script>
 <script type="text/javascript" src="js/overlay.js"></script>
 </body>

@@ -178,53 +178,53 @@
     display: none;
 }
 
-.list-inline {
+.screen {
     position: absolute;
     width: 100%;
-    bottom: 2%;
+    bottom: 3%;
     text-align: center;
 }
 
-.list-inline li {
-    width: 22%;
+.screen li {
+    width: 20%;
     margin-right: 5%;
+    display: inline-block;
+    line-height: 1.42857143;
+    touch-action: manipulation;
+    padding: 8px 8px;
+    border-radius: 4px;
+    white-space: nowrap;
+    vertical-align: middle;
 }
 
-.list-inline > li:last-child {
+.screen > li:last-child {
     margin-right: 0;
 }
 
-/*.function_left {
-    float: left;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    height: 85%;
-    align-items: center;
+#goodFloor {
+    background-color: #d9534f;
 }
 
-.function_right {
-    float: right;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    height: 85%;
-    align-items: center;
-    margin-right: 5%;
-}*/
+#sportsGround {
+    background-color: #5bc0de;
+}
+
+#avenue {
+    background-color: #f0ad4e;
+}
 
 .function_left {
-    width: 15%;
+    width: 14%;
     position: absolute;
     bottom: 15%;
-    left: 2%;
+    left: 1%;
 }
 
 .function_right {
-    width: 15%;
+    width: 14%;
     position: absolute;
     bottom: 15%;
-    right: 2%;
+    right: 1%;
 }
 
 .function_right img,
@@ -234,7 +234,7 @@
 
 /*并集选择器*/
 .function_left li, .function_right li {
-    margin-bottom: 10px;
+    margin-bottom: 14px;
 }
 
 .dialog {
@@ -243,9 +243,15 @@
     background-size: 100% 100%;
     transition: background 2s;
     width: 65%;
-    padding: 10px 5px 0 30px;
+    padding: 12px 8px 0 23px;
     z-index: 10113;
     display: none;
+}
+
+.dialog_about {
+    height: 50%;
+    overflow-y: auto;
+    top: 54%;
 }
 
 h4 {
@@ -278,7 +284,7 @@ button {
 }
 
 .dialog_gold_detail {
-    top: 32%;
+    top: 29%;
     position: absolute;
     background: url("../img/弹出框.png") no-repeat;
     background-size: 100% 100%;

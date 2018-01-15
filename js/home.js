@@ -1,13 +1,11 @@
 $(function () {
     //左边
-    var share = $("#share");
     var detail = $("#detail");
     var interaction = $("#interaction");
     var personInfo = $("#person_info");
     var about = $("#about");
 
     //右边
-    var back = $("#back");
     var signIn = $("#sign_in");
     var stroke = $("#stroke");
     var bath = $("#bath");
@@ -100,11 +98,6 @@ $(function () {
         avenue.click(function () {
             applyClasses(background, 'bg-avenue');
             background.fadeIn();
-        });
-
-        /**点击返回按钮时触发*/
-        back.click(function () {
-            window.close();
         });
 
         /**点击签到按钮时触发*/
