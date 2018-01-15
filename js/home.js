@@ -22,6 +22,9 @@ $(function () {
     //羊驼
     var sheep = $(".sheep");
 
+    //金币数
+    var goldNum = $("#gold_num");
+
     var hand = $(".hand");
     var heart1 = $(".heart1");
     var heart2 = $(".heart2");
@@ -71,11 +74,14 @@ $(function () {
     }
 
     //显示金币减少的过程
-    function showGold() {
+    function showGold(decNum) {
         gold_1.show("fast", function () {
             gold_1.animate({bottom: '85%'}, 3000, "swing", function () {
                 // gold_1.attr('bottom', "54%");
                 gold_1.fadeOut("slow");
+                var text = goldNum.text();
+                console.log("剩余的金币：" + text);
+                goldNum.text(text - decNum);
             });
         });
         gold_1.css("bottom", "54%");
@@ -116,8 +122,8 @@ $(function () {
                 hand.fadeOut(2000);
             });
 
-            gold_1.attr('src', "img/减金币.png");
-            showGold();
+            gold_1.attr('src', "img/金币减1.png");
+            showGold(1);
             heart1.fadeIn(500);
             heart2.fadeIn(1000);
             heart3.fadeIn(1500);
@@ -138,7 +144,7 @@ $(function () {
             showerHead.fadeIn(500);
             initWater();
             water.fadeIn(1000);
-            showGold();
+            showGold(4);
             waters.fadeIn(1500, function () {
                 setInterval(function () {
                     showerHead.fadeOut("slow");
@@ -156,7 +162,7 @@ $(function () {
             showerHead.fadeIn(500);
             water.fadeIn(1000);
             twoGrass.fadeIn(1200);
-            showGold();
+            showGold(3);
             waters.fadeIn(1500, function () {
                 setInterval(function () {
                     showerHead.fadeOut("slow");
@@ -170,8 +176,8 @@ $(function () {
         /**点击喝水按钮时触发*/
         drinking.click(function () {
             cup.show("slow");
-            gold_1.attr('src', "img/减金币.png");
-            showGold();
+            gold_1.attr('src', "img/金币减1.png");
+            showGold(2);
             sun1.fadeIn(500);
             sun2.fadeIn(1000);
             sun3.fadeIn(1500);

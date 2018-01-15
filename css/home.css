@@ -22,6 +22,47 @@
 .header {
     margin: 2% 0 0 3%;
     width: 70%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.avatar {
+    width: 70px;
+    height: 70px;
+    vertical-align: middle;
+    position: relative;
+    border-radius: 35px;
+    z-index: 2;
+}
+
+.state {
+    background-color: rgb(241, 243, 245);
+    width: 60%;
+    height: 38px;
+    margin-left: -18px;
+    padding: 8px 15px;
+    vertical-align: middle;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    display: inline-block;
+}
+
+.stage {
+    display: inline-block;
+    margin: 0 5px;
+    text-align: center;
+    color: #2aabd2;
+    border-right: 1px solid rgb(207, 202, 204);
+    padding-right: 6px;
+}
+
+.stage:last-child {
+    border-right: none;
+    padding-right: 0;
+}
+
+#stage, #day_num, #gold_num {
+    margin-top: 5px;
 }
 
 .sheep {
