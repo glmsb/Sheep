@@ -47,6 +47,8 @@ $(function () {
 
     var dialogPerson = $(".dialog_person");
 
+    var dialogGoldDetail = $(".dialog_gold_detail");
+    var dialogInteraction = $(".dialog_interaction");
 
     function initWater() {
         water.empty();
@@ -235,7 +237,27 @@ $(function () {
                 dialogPerson.fadeOut();
                 overlay.close();
             });
-        })
+        });
+
+        /**点击金币明细按钮时触发*/
+        detail.click(function () {
+            overlay.show();
+            dialogGoldDetail.fadeToggle();
+            overlay.click(function () {
+                dialogGoldDetail.fadeOut();
+                overlay.close();
+            });
+        });
+
+        /**点击互动情况按钮时触发*/
+        interaction.click(function () {
+            overlay.show();
+            dialogInteraction.fadeToggle();
+            overlay.click(function () {
+                dialogInteraction.fadeOut();
+                overlay.close();
+            });
+        });
     }
 });
 

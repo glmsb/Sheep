@@ -273,8 +273,36 @@ button {
     font-size: 1.5rem;
 }
 
-.dialog_person{
+.dialog_person {
     top: 48%;
+}
+
+.dialog_gold_detail {
+    top: 32%;
+    position: absolute;
+    background: url("../img/弹出框.png") no-repeat;
+    background-size: 100% 100%;
+    transition: background 2s;
+    width: 65%;
+    height: 30%;
+    overflow-y: auto;
+    padding: 10px 12px 0 20px;
+    z-index: 10113;
+    display: none;
+}
+
+.dialog_interaction {
+    top: 40%;
+    position: absolute;
+    background: url("../img/弹出框.png") no-repeat;
+    background-size: 100% 100%;
+    transition: background 2s;
+    width: 65%;
+    height: 33%;
+    overflow-y: auto;
+    padding: 10px 12px 0 20px;
+    z-index: 10113;
+    display: none;
 }
 
 #info_form {
@@ -311,7 +339,29 @@ input {
     font-weight: bold;
 }
 
-#cancel{
+#cancel {
     left: 38%;
 }
 
+.date {
+    float: left;
+}
+
+.gold_num {
+    float: right;
+}
+
+.gold {
+    width: 23px;
+    height: 23px;
+}
+
+td {
+    padding: 2px 6px;
+    color: #2aabd2;
+    text-align: center;
+}
+
+td:first-child, td:nth-child(2) {
+    padding: 2px 0;
+}
